@@ -1,7 +1,5 @@
 # one-line-a-day
 
-***
-
 
 ## May 16, 2019 | Thur
 
@@ -56,7 +54,6 @@ const magic = () => new Date();
 
 - pointer + integer = address
 
-***
 
 
 ## May 15, 2019 | Wed
@@ -79,7 +76,6 @@ Git
 
 - `ls` command only works on Mac and Linux, use `dir` in Windows
 
-***
 
 
 ## May 14, 2019 | Tue
@@ -110,7 +106,6 @@ C++ Pointers
 
   `int* numPtr`
 
-***
 
 
 ## May 13, 2019 | Mon
@@ -122,7 +117,6 @@ C++ and memory
 - We can directly manipulate memory in C++
 - Each memory cell has an address, data
 
-***
 
 
 ## May 12, 2019 | Sun
@@ -141,7 +135,6 @@ Created a message board website
 - Used JS to clear text box and add textbox entry to a list and display it
 - Learned about `parse` and `stringify` JSON 
 
-***
 
 
 ## May 11, 2019 | Sat
