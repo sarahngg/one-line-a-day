@@ -1,11 +1,36 @@
 # one-line-a-day
 
+## May 17, 2019 | Fri
+
+### Technologies:
+
+C++
+
+#### Constructors
+
+* default constructor
+  * initialize object to default state
+  * initialize variables (“clearing” garbage value)
+    * usually set integers to `0` and pointers to `NULL`
+  * given by the compiler unless we write **any** constructor (default or not)
+  * used in declaring arrays of objects `Object myArray[3]`
+
+* `new Object();` - dynamic
+  1. Set aside memory for the object
+  2. Then call the constructor to initialize that memory
+  3. Finally returns the address of the dynamic object
+* `Object o1;` - local
+  * NOTE: Do not use `()` for default constructor to indicate it is not a function declaration
+    * Variable declaration:  `Object o;`
+    * Function declaration: `Coord c4();`
+
+#### Copy Constructor
+
+* A constructor that takes a parameter of an object of the same class, eg. `Object (const Object& originalObject);`
 
 ## May 16, 2019 | Thur
 
-JavaScript tutorials
-
-### Main technologies:
+### Technologies:
 
 - JavaScript
 - C++
@@ -60,7 +85,7 @@ const magic = () => new Date();
 
 Created, committed, pushed repositories from command line.
 
-### Main technologies: 
+### Technologies: 
 
 Git
 
@@ -80,7 +105,7 @@ Git
 
 ## May 14, 2019 | Tue
 
-### Main technologies
+### Technologies
 
 C++ Pointers
 
@@ -110,7 +135,7 @@ C++ Pointers
 
 ## May 13, 2019 | Mon
 
-### Main technologies
+### Technologies
 
 C++ and memory
 
@@ -121,7 +146,7 @@ C++ and memory
 
 ## May 12, 2019 | Sun
 
-### Main technologies
+### Technologies
 
 - HTML
 - CSS
@@ -139,7 +164,7 @@ Created a message board website
 
 ## May 11, 2019 | Sat
 
-### Main technologies
+### Technologies
 
 - HTML
 - CSS
