@@ -1,5 +1,19 @@
 # one-line-a-day
 
+## May 18, 2019 | Sat
+
+### Technologies:
+
+C++
+
+#### Destructors
+
+* Preceded by `~`
+
+* Called by `delete`
+
+* Empty destructor is provided by the compiler
+
 ## May 17, 2019 | Fri
 
 ### Technologies:
