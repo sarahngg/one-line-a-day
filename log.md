@@ -21,7 +21,6 @@
 - freecodecamp javascript tutorial
 
 ## May 21, 2019 | Tue
-
 ### Technologies:
 
 C++
@@ -80,8 +79,6 @@ C++
 * Generally needed when the class have pointers as member data
 
 `copiedPointer = new Object(originalObject->data);`
-
-
 
 ## May 17, 2019 | Fri
 
