@@ -20,6 +20,66 @@
 - freecodecamp javascript tutorial
 
 ## May 21, 2019 | Tue
+
+### Technologies:
+
+C++
+
+#### Destructor
+
+* Gives back resources to the system
+* Called implicitly when
+  1. The object goes out of scope
+  2. `delete` is called on a pointer
+* No parameters/return type (can’t be overloaded)
+* Specific name: `~ClassName()`
+
+##### Default Destructor
+
+* Supplied by compiler
+* Empty and does nothing
+
+##### Expected Functionality
+
+When an object goes out of scope/`delete` is called on a pointer
+
+1. The object destructor is called `~Object()`
+   * Specific request for outside resources is freed
+
+2. Destructors of the member variables are called one by one
+   * Primitive types (including pointer) - do nothing
+     * Pointer destructor does not deallocate memory → memory leak
+     * Therefore must call `delete` on pointer to free dynamic memory
+   * Non-primitive types - their destructors are called and we trust them to clean up
+
+
+
+## May 20, 2019 | Mon
+
+### Technologies:
+
+C++
+
+#### Copy Constructor
+
+- A constructor that takes a parameter of an object of the same class, eg. `Object (const Object& originalObject);`
+- Used for initializing a copy of `originalObject`
+- Private members can be accessed - copy constructor and `originalObject` belong to the same class
+
+##### Default Copy Constructor
+
+- Compiler always supply a copy constructor
+- Primitive types including pointers are copied bitwise 
+  - Pointer is copied with the same memory address as the old object pointer without dereferencing, rather than having its own copy of the dynamic memory
+- Only soft copy will be made (top level)
+
+##### Writing a Copy Constructor for Member Pointers
+
+* Hard copy with be made such that the original object and the copied object are independent in memory usage
+* Generally needed when the class have pointers as member data
+
+`copiedPointer = new Object(originalObject->data);`
+
 ## May 18, 2019 | Sat
 
 ### Technologies:
