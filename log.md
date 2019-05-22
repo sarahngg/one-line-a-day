@@ -1,4 +1,6 @@
 # one-line-a-day
+
+
 ## May 22, 2019 | Wed
 
 ### Project Review
@@ -20,7 +22,6 @@
 - freecodecamp javascript tutorial
 
 ## May 21, 2019 | Tue
-
 ### Technologies:
 
 C++
@@ -80,20 +81,6 @@ C++
 
 `copiedPointer = new Object(originalObject->data);`
 
-## May 18, 2019 | Sat
-
-### Technologies:
-
-C++
-
-#### Destructors
-
-* Preceded by `~`
-
-* Called by `delete`
-
-* Empty destructor is provided by the compiler
-
 ## May 17, 2019 | Fri
 
 ### Technologies:
@@ -102,7 +89,7 @@ C++
 
 #### Constructors
 
-* default constructor
+* Default constructor
   * initialize object to default state
   * initialize variables (“clearing” garbage value)
     * usually set integers to `0` and pointers to `NULL`
@@ -117,10 +104,6 @@ C++
   * NOTE: Do not use `()` for default constructor to indicate it is not a function declaration
     * Variable declaration:  `Object o;`
     * Function declaration: `Coord c4();`
-
-#### Copy Constructor
-
-* A constructor that takes a parameter of an object of the same class, eg. `Object (const Object& originalObject);`
 
 ## May 16, 2019 | Thur
 
@@ -138,7 +121,7 @@ C++
   - like `let` but read only
   - a `const` array’s content can be mutated by assigning values individually to the array cells, but the array reference variable is non-mutable
     - Use `Object.freeze(obj)` to prevent object mutation
-- anonymous functions
+- Anonymous functions
 
 ```
 // const magic = function() {
