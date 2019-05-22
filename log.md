@@ -1,5 +1,25 @@
 # one-line-a-day
+## May 22, 2019 | Wed
 
+### Project Review
+
+<https://github.com/sarahngg/message-board>
+
+### Difficulties
+
+- Visualizing how elements will render on screen simply by looking at the code
+- Constant iteration of css styles 
+- Understanding JSON string and JSON object
+- Deciding between css class or id when applying styles
+- Understanding specification (sometimes ambiguous like the clear function)
+
+### What I learned
+
+- Steal color theme/palette from websites I like by inspecting elements
+- Visualize webpage as many div boxes within many div boxes rather than thinking element-wise
+- freecodecamp javascript tutorial
+
+## May 21, 2019 | Tue
 ## May 18, 2019 | Sat
 
 ### Technologies:
