@@ -1,5 +1,13 @@
 # one-line-a-day
 
+## May 23, 2019 | Thur
+
+### Project
+
+* Set up sarahngg.github.io
+* Played around with colours and styling in CSS
+* Installed Meteor and React
+
 ## May 22, 2019 | Wed
 
 ### Project Review
@@ -13,6 +21,15 @@
 - Understanding JSON string and JSON object
 - Deciding between css class or id when applying styles
 - Understanding specification (sometimes ambiguous like the clear function)
+
+### Additional Functionality
+
+* Google Font
+* Emoji support
+* Random emoji when no name is entered
+* Name field in form
+* Clearing text area text after form submission
+* Resizing when screen size changes
 
 ### What I learned
 
