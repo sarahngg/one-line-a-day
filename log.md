@@ -282,7 +282,7 @@ In the parent:
 class Parent extends Component {
     render() {
         return (
-            <div className = "Parent">
+            <div className = "parent">
                 <ChildComponent name="Child A" age="5"/>
                 <ChildComponent name="Child B" age="3"/>
             </div>
