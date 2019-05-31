@@ -4,7 +4,7 @@
 
 React, Redux Tutorial - switched to video format
 
-#### Set up index.html
+### Set up index.html
 
 * add an HTML element - this will be where react renders your component
 * Note: may need to go to `/public` to find the `index.html` if using boilerplate project from react
@@ -13,7 +13,7 @@ React, Redux Tutorial - switched to video format
 <div id="an-html-element"></div>
 ```
 
-#### JS
+### JS
 
 ```
 class AnAwesomeComponent extends React.Component {
@@ -27,14 +27,14 @@ class AnAwesomeComponent extends React.Component {
 }
 ```
 
-#### JSX
+### JSX
 
 * write HTML code within a JavaScript block
 * Limitations
   1. Can only return one root element - wrap in a div if more than one
   2. `class` cannot be used to add a CSS class to an element - use `className` instead
 
-#### Render
+### Render
 
 To tell react to render the component, pass in 
 
@@ -47,7 +47,7 @@ ReactDOM.render(
 );
 ```
 
-#### Dynamic JavaScript rendering
+### Dynamic JavaScript rendering
 
 We want to use JS within the HTML elements returned in render, because displaying static things are not that interesting.
 
@@ -67,7 +67,7 @@ class App extends React.Component {
 }
 ```
 
-#### Component State
+### Component State
 
 State of UI and data
 
@@ -79,7 +79,7 @@ Example:
 }
 ```
 
-#### Ways to define state
+Ways to define state
 
 Inside the component
 
@@ -104,7 +104,7 @@ render(){
 }
 ```
 
-#### Event
+### Event
 
 Attaching an event handler to an element
 
@@ -136,7 +136,7 @@ render(){
 }
 ```
 
-#### Using arrow functions to bind `this` and access component state
+### Using arrow functions to bind `this` and access component state
 
 In a DOM event, the `this` context is lost/scope is different when the event handling function is called. So this will not work:
 
@@ -154,7 +154,7 @@ aFunctionToHandleAnEvent = (e) => {
     }
 ```
 
-#### Using `this.setState` to change state in a function
+### Using `this.setState` to change state in a function
 
 Update state using `setState()`  and list the state properties you want to change. React will only change those and keep other properties intact.
 
@@ -170,7 +170,7 @@ aFunctionToHandleAnEvent = (e) => {
     }
 ```
 
-#### Working with forms
+### Working with forms
 
 ```jsx
 <form onSubmit = {this.handleSubmit}>
@@ -195,7 +195,7 @@ handleSubmit =(e)=> {
 }
 ```
 
-#### Create React App
+### Create React App
 
 * command line tool to make react apps
 * keep code modular
@@ -211,7 +211,7 @@ Folder structure
 * public - serve to browser
 * src - our work
 
-#### Single Page App
+### Single Page App
 
 * Only request page from server once - request the index.html file
 * React handles the subsequent request and give faster response to the app
@@ -221,7 +221,7 @@ Root component
 * mother of all components
 * other components are nested in it
 
-#### Nesting a component within another
+### Nesting a component within another
 
 Make code more modular
 
@@ -260,7 +260,7 @@ class Parent extends Component {
 export default Parent;
 ```
 
-#### Passing data from parent to child component via `props`
+### Passing data from parent to child component via `props`
 
 In the child:
 
