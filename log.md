@@ -1,5 +1,90 @@
 # one-line-a-day
 
+## May 30, 2019 | Thur
+
+### C++ associative array
+
+* `auto` type inference
+* `auto lookup = map.find(key)` returns an iterator to an element with key equivalent to `key` 
+  * if not found, `lookup` is `map.end()`
+  * if found, dereferencing the iterator `lookup` will give a `std::pair`
+* `pair.first` is the key and `pair.second` is the value
+
+### React Tutorial
+
+#### JSX
+
+- can put any JavaScript expressions within braces inside JSX
+- Event handlers
+  - onClick
+  - onMouseOver
+
+#### Arrow Function Syntax
+
+`onClick={() => alert('click')}` instead of `onClick={function() { alert('click'); }`
+
+#### State
+
+* React component use `state` to remember things
+  * setting `this.state` in constructors - should be private
+
+
+
+Note: All React component classes that have a `constructor` should start it with a `super(props)` call.
+
+Question:
+
+- When does a React component need/not need a constructor?
+
+
+
+## May 29, 2019 | Wed
+
+### React, Redux, JS
+
+[Tutorial](https://reactjs.org/tutorial/tutorial.html#before-we-start-the-tutorial)
+
+* [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) - like a function but without its own **bindings** - cannot be used as constructors
+
+### React
+
+* efficient and flexible JS library for building UI
+* breakdown complex UI into components
+
+#### `props`
+
+* properties
+* `React.Component` subclass takes parameters called `props` - properties and returns a hierachy of views to display via `render()`
+
+#### `render()`
+
+* returns a **React element** - what to render
+* react takes this info and display on screen
+
+## May 25, 2019 | Sat
+
+### Scrum Update
+
+What did you work on this past iteration (2 weeks)?
+
+* Sketched prototypes for menu page, journal page
+* Pitched idea to team
+
+What were any major issues/challenges you ran into?
+
+- Proposing features that I am not sure how to implement
+  - Searching keyword
+  - Storing many types of data and retrieving them
+
+What do you plan to work on for this coming iteration (2 weeks)?
+
+* Do react and redux tutorial on freecodecamp and lynda
+* Prototype UI - Material UI
+  * Finalize drawer
+* Make glossary (give names to things)
+
+
+
 ## May 23, 2019 | Thur
 
 ### Project
