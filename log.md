@@ -1,5 +1,3 @@
-# one-line-a-day
-
 ## May 31, 2019 | Fri
 
 React, Redux Tutorial - switched to video format
@@ -285,8 +283,8 @@ class Parent extends Component {
     render() {
         return (
             <div className = "Parent">
-                <ChildComponent name="Child A" age=5/>
-                <ChildComponent name="Child B" age=3/>
+                <ChildComponent name="Child A" age="5"/>
+                <ChildComponent name="Child B" age="3"/>
             </div>
         )
     }
