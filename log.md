@@ -1,3 +1,200 @@
+## June 19, 2019 | Wed
+
+`chat-with-gossipgirl` Personal Project Demo
+
+### Server
+
+* Stored the initial set of messages in a JavaScript array in `api/routes/messages.js`
+  * Set up Express router for GET, POST, and DELETE (additional) requests
+  * Note: DELETE request only deletes the newest message using `pop()`
+
+* Used Postman to verify the requests works
+* Handled asynchronous calls in  `src/actions/index.js`
+  * `redux-thunk` in `api/app.js`
+
+### Extra
+
+* Moved actions from component to `src/actions/index.js`
+* Declared action types as constants for single point of control
+* Added contact bar on top with name, details, and back
+* Improved speech bubble colors to match the iMessage colors
+* Hover to show message id
+
+### Challenges
+
+* How to handle the duplication of data in redux and server?
+* Where should the business logic go? Currently in `rootReducer`
+* How to split the reducers?
+* How to keep a count of messages
+
+## June 16, 2019 | Sun
+
+<https://redux.js.org/advanced/async-actions>
+
+Asynchronous API has two crucial moments in time
+
+* the moment you start the call
+* the moment when you receive an answer (or a timeout)
+
+These moments require a change in state, so we need to dispatch normal actions that will be processed by reducers synchronously.
+
+For any API request, we dispatch these actions informing the reducers that:
+
+* The request began
+  * eg. toggle `isFetching` flag in state to show spinner in UI
+* The request finished successfully
+  * eg. merging new data into the state and resetting `isFetching` so UI hide spinner and display fetched data
+* The request failed
+  * eg. resetting `isFetching` and store the error message to display in UI
+
+## June 15, 2019 | Sat
+
+NodeJS
+
+JavaScript Engines
+
+* Converts JavaScript to machine code
+
+* Node.js is written in C++
+* Eg. V8 - created by Google
+
+```javascript
+/*
+  The Global Object
+  https://nodejs.org/api/globals.html
+*/
+setTimeout(function(){
+  console.log('3 seconds have passed');
+}, 3000);
+
+var time = 0;
+var timer = setInterval(function(){
+  time +=2;
+  console.log(time + ' seconds have passed');
+  if (time > 5) {
+    clearInterval(timer);
+  }
+}, 2000);
+
+// Prints directory
+console.log(__dirname);
+
+// Prints file
+console.log(__filename);
+
+/* 
+  Function Expressions
+  - common expression in node
+*/
+
+// Normal function statement
+function sayHi(){
+  console.log('hi');
+}
+
+sayHi(); // invoke function by name
+
+// Function expression - anoymous function
+var sayBye = function(){ // set anon function to variable
+  console.log('bye');
+};
+
+//sayBye(); // invoke function by var()
+
+function callFunction(fun) {
+  console.log('This function takes another function as a param');
+  fun(); // then call the function
+}
+
+callFunction(sayBye);
+```
+
+### Modules and Require
+
+In app.js
+
+```javascript
+// require the counter module returns whatever is in module.exports in count.js
+var counter = require('./counter');
+
+
+console.log(counter(["this", "that", "those"]));
+```
+
+In count.js
+
+```javascript
+var counter = function(arr) {
+  return "There are " + arr.length + " elements in this array"
+};
+//explicitly say what part of the module we want to make available to file that `requre` this module
+module.exports = counter;
+```
+
+### Module Patterns
+
+There are several ways to export multiple things in the export object 
+
+In app.js
+
+```javascript
+var stuff = require('./stuff');
+
+console.log(stuff.counter(["this", "that", "those"]));
+console.log(stuff.adder(5,6));
+console.log(stuff.adder(5,stuff.pi));
+```
+
+In stuff.js
+
+```javascript
+var counter = function(arr) {
+  return "There are " + arr.length + " elements in this array"
+};
+
+var adder = function(a,b){
+    return `The sum of the 2 numbers is ${a+b}`;
+};
+
+var pi = 3.142;
+
+// Add properties to the export object
+// Original: module.exports = counter;
+module.exports.counter = counter;
+module.exports.adder = adder;
+module.exports.pi = pi;
+```
+
+```javascript
+module.exports.counter = function(arr) {
+  return "There are " + arr.length + " elements in this array"
+};
+
+module.exports.adder = function(a,b){
+    return `The sum of the 2 numbers is ${a+b}`;
+};
+
+module.exports.pi = 3.142;
+```
+
+```javascript
+var counter = function(arr) {
+  return "There are " + arr.length + " elements in this array"
+};
+
+var adder = function(a,b){
+    return `The sum of the 2 numbers is ${a+b}`;
+};
+
+var pi = 3.142;
+
+module.exports = {
+    counter: counter,
+    adder: adder,
+    pi: pi
+};
+```
+
 ## May 31, 2019 | Fri
 
 React, Redux Tutorial - switched to video format
@@ -13,7 +210,7 @@ React, Redux Tutorial - switched to video format
 
 ### JS
 
-```
+```jsx
 class AnAwesomeComponent extends React.Component {
 	//must have at least the render method
 	render() {
@@ -51,7 +248,7 @@ We want to use JS within the HTML elements returned in render, because displayin
 
 Wrap dynamic content in `{}` like `{Math.floor(Math.random() * 10)}` in the return value
 
-```javascript
+```jsx
 class App extends React.Component {
     render(){
         
@@ -71,7 +268,7 @@ State of UI and data
 
 Example:
 
-```javas
+```jsx
 {
 	showPopup: true
 }
@@ -81,7 +278,7 @@ Ways to define state
 
 Inside the component
 
-```javascript
+```jsx
 state = { 
     someStateName: on, 
     anotherStateName: 6,
@@ -172,7 +369,7 @@ aFunctionToHandleAnEvent = (e) => {
 
 ```jsx
 <form onSubmit = {this.handleSubmit}>
-    <input type = "text" onChange={this.handleFormChange}/>
+    <input type="text" onChange={this.handleFormChange}/>
     <button>Submit</button>
 </form>
 ```
@@ -247,7 +444,7 @@ import ChildComponent from './ChildComponent';
 class Parent extends Component {
     render() {
         return (
-            <div className = "Parent">
+            <div className="Parent">
                 <ChildComponent />
             </div>
         )
@@ -282,7 +479,7 @@ In the parent:
 class Parent extends Component {
     render() {
         return (
-            <div className = "parent">
+            <div className="parent">
                 <ChildComponent name="Child A" age="5"/>
                 <ChildComponent name="Child B" age="3"/>
             </div>

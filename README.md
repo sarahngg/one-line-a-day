@@ -1,23 +1,18 @@
 # one-line-a-day
 
-One Line A Day is my programming journal where I record my project progress and things I learned in Markdown. The following table is an overview tracker of my progress. The dates are linked to my log entry of that day.
+One Line A Day is my programming journal where I record my project progress and things I learned in Markdown. View my logs **[here](log)**.
 
-|         | **[29](log#may-29-2019--wed)** | **[30](log#may-30-2019--thur)** | **[31](log#may-31-2019--fri)** | June 1 | **2** | **3** | **4** | **5** | 6    | 7    | 8    | **9** | **10** | 11   |
-| ------- | ------------------------------ | ------------------------------- | ------------------------------ | ------ | ----- | ----- | ----- | ----- | ---- | ---- | ---- | ----- | ------ | ---- |
-| C++     |                                | x                               |                                |        |       |       |       |       |      |      |      |       |        |      |
-| JS      | x                              | x                               | x                              |        |       |       |       |       |      |      |      |       |        |      |
-| React*  | x                              | x                               | x                              |        |       |       |       |       |      |      |      |       |        |      |
-| Redux*  |                                |                                 |                                |        |       |       |       |       |      |      |      |       |        |      |
-| Project |                                |                                 |                                |        |       |       |       |       |      |      |      |       |        |      |
-| Other   |                                |                                 |                                |        |       |       |       |       |      |      |      |       |        |      |
+### May Focus
 
+- HTML/CSS
+- C++
+- JS
+- React
+- Redux
 
+### June Focus
 
-| **May** | **[11](log#may-11-2019--sat)** | **[12](log#may-12-2019--sun)** | **[13](log#may-13-2019--mon)** | **[14](log#may-14-2019--tue)** | **[15](log#may-15-2019--wed)** | **[16](log#may-16-2019--thur)** | **[17](log#may-17-2019--fri)** | **18** | **19** | **[20](log#may-20-2019--mon)** | **[21](log#may-21-2019--tue)** | **[22](log#may-22-2019--wed)** | **[23](log#may-23-2019--thur)** | **24** | **[25](log#may-25-2019--sat)** |
-| ------- | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------- | ------------------------------ | ------ | ------ | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------- | ------ | ------------------------------ |
-| C++     |                                |                                | x                              | x                              |                                | x                               | x                              |        |        | x                              | x                              |                                |                                 |        |                                |
-| JS      | x                              | x                              |                                |                                |                                | x                               |                                |        |        |                                |                                |                                |                                 |        |                                |
-| HTML    | x                              | x                              |                                |                                |                                |                                 |                                |        |        |                                |                                |                                |                                 |        |                                |
-| CSS     | x                              | x                              |                                |                                |                                |                                 |                                |        |        |                                |                                |                                | x                               |        |                                |
-| Project | x                              | x                              |                                |                                |                                |                                 |                                |        |        |                                |                                | x                              | x                               |        | x                              |
-| Other   |                                |                                |                                |                                | Git                            |                                 |                                |        |        |                                |                                |                                | x                               |        | Scrum<br />update              |
+- Redux
+- Node/Express
+- Project
+- Git
