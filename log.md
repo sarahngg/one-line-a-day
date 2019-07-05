@@ -1,3 +1,94 @@
+## July 5, 2019 | Fri
+
+### Take-home Assignment Project Summary
+
+#### Project Requirements
+
+- It must look and feel good across **all** screen sizes
+- Create a `README.md` file with simple instructions to run the app.
+- Create a search page with a search bar. Users should be able to paste a GitHub repo URL here.
+- Create a results page that displays **all** (open, closed, pull requests) issues from the search query.
+- Indicate which issues are closed or pull requests using the icons.
+- Implement filtering by open, closed, or pull requests on the results page.
+
+#### Bonus Features Attempted
+
+- Add indicators for search progress.
+- Cover the case of an error fetching the results.
+- Implement pagination with multiple pages
+
+#### Future Improvement
+
+* Pagination: No limit on page increment even though there may not be a next page
+* Limit issue title and body length
+* Learn more about GItHub API, provide a schema for GitHub API to only return data that I need
+* Learn more about frontend testing methods
+
+#### Challenges
+
+* Creating my second major JavaScript project
+* Deciding React folder structure
+* Understanding the non-exclusive nature of issues and pull requests
+* Deciding what should be a component and what should not
+* Understanding CSS grid and flexbox
+* Deciding what to put in store vs. component state
+* GET-ting data from GitHub API with pagination
+* Deciding whether or not to store all issues and filter them or GET with queries when selected filter changed
+
+#### Outsourced
+
+* parse-github-url: Parsing GitHub repo url for user and repo name
+* Axios: Fetching data from GitHub API
+* Responsiveness: CSS Grid
+* CSS loading indicator
+
+## June 31, 2019 | Sun
+
+CSS
+
+* flex <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+* box shadow <https://www.w3schools.com/css/css3_shadows.asp>
+
+To-do
+
+coloring svg to right color
+https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files#adding-svgs
+https://stackoverflow.com/questions/42296499/how-to-display-svg-icons-svg-files-in-ui-using-react-component
+
+make input placeholder text scale with screen width
+
+## June 29, 2019 | Sat
+
+create-react-app
+
+* installed successfully using a different router
+
+CSS
+
+* used @font-face
+  * @**font**-**face** is a css rule which allows you to download a particular **font** from your server to render a webpage if the user hasn't got that **font** installed. This means that web designers will no longer have to adhere to a particular set of "web safe" **fonts** that the user has pre-installed on their computer.
+* <https://css-tricks.com/whats-deal-declaring-font-properties-font-face/>
+
+## June 28, 2019 | Fri
+
+CPSC 221 Final Exam
+
+* Done!
+
+React app
+
+* Failed to create-react-app
+
+## June 24, 2019 | Mon
+
+Git - Revert a pushed commit
+
+<https://gist.github.com/gunjanpatel/18f9e4d1eb609597c50c2118e416e6a6>
+
+GitHub Issue List API
+
+<https://api.github.com/repos/sarahngg/chat-with-gossip-girl/issues?state=all>
+
 ## June 19, 2019 | Wed
 
 `chat-with-gossipgirl` Personal Project Demo
